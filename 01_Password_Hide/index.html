@@ -7,9 +7,24 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="password">
-        <input type="password" placeholder="block">
+    <div class="box">
+        <input type="password" placeholder="password" id="password">
+        <img src="images_n_icons/eye-close.png" id="eyeicon">
     </div>
-    
+
+<script>
+const eyeIcon = document.querySelector("#eyeicon");
+const password = document.querySelector("#password");
+
+eyeIcon.addEventListener("click", function () {
+    if (password.type === "password") {
+        password.type = "text";
+        eyeIcon.src = "images_n_icons/eye-open.png"; 
+    } else {
+        password.type = "password";
+        eyeIcon.src = "images_n_icons/eye-close.png"; 
+    }
+});
+</script>
 </body>
 </html>
