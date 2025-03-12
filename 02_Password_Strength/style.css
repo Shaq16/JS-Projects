@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+}
+
+.password{
+    margin:300px 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:8px;
+}
+
+div .arrow{
+    margin-left:6px;
+    height:2rem;
+    transform: translateX(-50px);
+    cursor: pointer;
+
+}
+
+.box{
+    background-color: #212121;
+    width:40%;
+    height: 3rem;
+    border:1px solid;
+    border-radius:3px;
+    font-size:20px;
+    outline:0;
+    border-color: #f1f1f1;
+    padding: 8px;
+}
+
+p{
+    color:#fff;
+    margin-left:450px;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
