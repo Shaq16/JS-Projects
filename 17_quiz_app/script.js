@@ -41,28 +41,30 @@ const questions= [
 
 ]
 
-const question = document.querySelector("#question")
-const answer = document.querySelector("#answer")
-const next = document.querySelector("#next")
+const question = document.querySelector("#question");
+const answer = document.querySelector(".answer"); 
+const nextButton = document.querySelector("#next"); 
 
-let currentQuestionIndex=0;
-let score=0;
+let currentQuestionIndex = 0;
+let score = 0;
 
-function startQuiz(){
-    currentQuestionIndex=0;
-    score=0;
-    nextButton.innerHTML="next";
+function startQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
     showQuestion();
 }
 
-function showQuestion(){
+function showQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
-    let questionNo=currentQuestionIndex+1;
-    question.innerHTML = questionNo + "."+ currentQuestionIndex.question
+    let questionNo = currentQuestionIndex + 1;
+    question.innerHTML = questionNo + ". " + currentQuestion.question; 
 
-    currentQuestion.answer.forEach(function(){
-        const button = document.querySelector("button");
-        button.innerHTML = answer.text
-        
-    })
+    const buttons = answer.querySelectorAll("button"); 
+    currentQuestion.answer.forEach(function(ans, index) {
+        buttons[index].innerHTML = ans.text;
+    });
+
 }
+
+startQuiz();
