@@ -59,4 +59,3 @@ searchBtn.addEventListener("click",function(){
     const city=search.value
     checkWeather(city)
 })
-
