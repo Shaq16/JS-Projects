@@ -28,7 +28,6 @@ generate.addEventListener("click",function(){
     createPassword()
 }
 )
-
 copy.addEventListener("click",function(){
     function copyPassword(){
         passwordBox.select()
