@@ -31,6 +31,7 @@ h2{
     display:block;
     font-size: 32px;
     font-family:Playfair Display;
+    position:relative;
 }
 
 /* span{
@@ -46,9 +47,68 @@ h2::after{
     width:75px;
     height:3px;
     border-radius:3px;
-    background-color: aqua;
+    background-color: #327CED;
     position:absolute;
-    bottom:-10px;
+    bottom:-5px;
     left:50%;
     transform:translateX(-50%);
+}
+
+span{
+    display:block;
+    margin-top:10px;
+    float:right;
+    position: relative;
+
+}
+
+span::before{
+    content:"";
+    height:3px;
+    width:25px;
+    border-radius:3px;
+    position:absolute;
+    background-color: #327CED;
+    left:-30px;
+    top:50%;
+}
+
+.btn{
+    width:100%;
+    margin-top:30px;
+    display:flex;
+    justify-content: center;
+}
+
+.new{
+    height:35px;
+    width:100px;
+    border:none;
+    border-radius:20px;
+    background-color:#327CED;
+    color:white;
+    font-family: Playfair Display;
+    text-align: center;
+    margin:0 10px;
+    font-size: 11px;
+    cursor:pointer;
+}
+
+.tweet{
+    height:35px;
+    width:100px;
+    border-radius:20px;
+    font-family: Playfair Display;
+    text-align: center;
+    margin:0 10px;
+    font-size: 11px;
+    cursor:pointer;
+    position: relative;
+}
+
+img{
+    height:15px;
+    width:15px;
+    position: absolute;
+    transform:translateX(-20px);
 }
